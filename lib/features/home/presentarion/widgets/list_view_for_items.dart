@@ -13,7 +13,7 @@ class ListViewForItems extends StatelessWidget {
           itemBuilder: (context , index)
           {
             return  Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all( 8.0),
               child: ListViewItem(
               ),
             );
