@@ -1,7 +1,7 @@
-import 'package:bookly_app/features/home/presentarion/widgets/book_rating.dart';
+import 'package:bookly_app/core/utils/assets.dart';
 import 'package:flutter/material.dart';
-import '../../../../core/utils/assets.dart';
-import '../views/home_view/home_view.dart';
+
+import 'book_rating.dart';
 
 class BestSellerListViewItem extends StatelessWidget {
   @override
@@ -9,8 +9,7 @@ class BestSellerListViewItem extends StatelessWidget {
     return Container(
       height: 125,
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.start,
+        // crossAxisAlignment: CrossAxisAlignment.start,
         children: [
            SizedBox(
             height: 100.0,

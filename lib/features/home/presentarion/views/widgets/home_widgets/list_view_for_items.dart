@@ -1,6 +1,6 @@
+import 'package:bookly_app/features/home/presentarion/views/widgets/home_widgets/list_view_item.dart';
 import 'package:flutter/material.dart';
 
-import 'list_view_item.dart';
 
 class ListViewForItems extends StatelessWidget {
 

@@ -1,8 +1,8 @@
-import 'package:bookly_app/features/home/presentarion/widgets/best_seller_list_view_item.dart';
+import 'package:bookly_app/features/home/presentarion/views/widgets/home_widgets/best_seller_list_view_item.dart';
+import 'package:bookly_app/features/home/presentarion/views/widgets/home_widgets/list_view_for_items.dart';
 import 'package:flutter/material.dart';
 import '../../../../../core/utils/styles.dart';
-import '../../widgets/appbar.dart';
-import '../../widgets/list_view_for_items.dart';
+import '../widgets/home_widgets/appbar.dart';
 
 class HomeView extends StatelessWidget {
   static const String routeName = "HomeView";
@@ -22,10 +22,11 @@ class HomeView extends StatelessWidget {
             style: Styles.titleMedium,
           ),
         ),
-        Padding(
-          padding: const EdgeInsets.only(top: 15.0, left: 8.0),
-          child: BestSellerListViewItem(),
-        ),
+        // Padding(
+        //   padding: const EdgeInsets.only(top: 15.0, left: 8.0),
+        //   child: BestSellerListViewItem(),
+        // ),
+        BestSellerListView(),
       ],
     )
     );
@@ -47,6 +48,26 @@ class HomeView extends StatelessWidget {
     //     ),
     //   ],
     // );
+  }
+}
+class BestSellerListView extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return Expanded(
+      child: ListView.builder(
+        // shrinkWrap: true,
+        // physics: const NeverScrollableScrollPhysics(),
+        padding: EdgeInsets.zero,
+          itemCount: 10,
+          itemBuilder: (context , index)
+      {
+        return Padding(
+          padding: const EdgeInsets.symmetric(vertical: 10.0 , horizontal: 8.0),
+          child: BestSellerListViewItem(),
+        );
+      }),
+    );
   }
 }
 

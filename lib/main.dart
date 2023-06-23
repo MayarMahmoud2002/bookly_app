@@ -1,3 +1,4 @@
+import 'package:bookly_app/features/home/presentarion/views/book_details_view/book_details_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'constances/contants.dart';
@@ -14,7 +15,7 @@ class BooklyApp extends StatelessWidget
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(scaffoldBackgroundColor: primaryColor),
-      home: HomeView(),
+      home: BookDetailsView(),
 
     );
     // return  GetMaterialApp(
