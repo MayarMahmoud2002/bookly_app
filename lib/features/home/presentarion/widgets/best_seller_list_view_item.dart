@@ -1,5 +1,7 @@
+import 'package:bookly_app/features/home/presentarion/widgets/book_rating.dart';
 import 'package:flutter/material.dart';
 import '../../../../core/utils/assets.dart';
+import '../views/home_view/home_view.dart';
 
 class BestSellerListViewItem extends StatelessWidget {
   @override
@@ -50,6 +52,7 @@ class BestSellerListViewItem extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
+                    BookRating(),
                   ],
                 ),
               ],
