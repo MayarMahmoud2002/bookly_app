@@ -12,6 +12,25 @@ class BookDetailsBody extends StatelessWidget {
         children: [
           BookDetailsAppbar(),
           BookDetailsImage(),
+          Text(
+            'The Jungle Book',
+            style: TextStyle(
+              fontSize: 25.0,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          SizedBox(
+            height: 5.0,
+          ),
+          Opacity(
+            opacity: .7,
+            child: Text(
+              'Rudyard Kipling',
+              style: TextStyle(
+                fontStyle: FontStyle.italic
+              ),
+            ),
+          ),
         ],
       ),
     );
