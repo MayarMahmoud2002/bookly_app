@@ -1,4 +1,5 @@
 import 'package:bookly_app/core/utils/assets.dart';
+import 'package:bookly_app/features/home/presentarion/widgets/best_seller_list_view_item.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../core/utils/styles.dart';
@@ -13,24 +14,23 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children:  [
+      children: [
         Appbar(),
         // ListViewItem(),
         ListViewForItems(),
-         Padding(
-           padding: const EdgeInsets.only(top: 40.0 , left: 15),
-           child: Text (
+        Padding(
+          padding: const EdgeInsets.only(top: 40.0, left: 15),
+          child: Text(
             'Best Seller',
             style: Styles.titleMedium,
+          ),
         ),
-         ),
+        Padding(
+          padding: const EdgeInsets.only(top: 15.0, left: 15),
+          child: BestSellerListViewItem(),
+        ),
       ],
     );
   }
 }
-
-
-
-
-
 
