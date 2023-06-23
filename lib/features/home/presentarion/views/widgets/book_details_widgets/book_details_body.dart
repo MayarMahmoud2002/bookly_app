@@ -1,3 +1,7 @@
+
+import 'package:bookly_app/core/utils/assets.dart';
+import 'package:bookly_app/features/home/presentarion/views/widgets/book_details_widgets/book_details_appbar.dart';
+import 'package:bookly_app/features/home/presentarion/views/widgets/book_details_widgets/book_details_image.dart';
 import 'package:flutter/material.dart';
 
 class BookDetailsBody extends StatelessWidget {
@@ -7,24 +11,10 @@ class BookDetailsBody extends StatelessWidget {
       body:Column(
         children: [
           BookDetailsAppbar(),
+          BookDetailsImage(),
         ],
       ),
     );
   }
 }
 
-class BookDetailsAppbar extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 60.0 , horizontal: 25.0 ),
-      child: Row(
-        children: [
-          Icon(Icons.clear_outlined , size: 25,),
-        Spacer(),
-        Icon(Icons.shopping_cart_outlined , size: 25,),
-]
-      ),
-    );
-  }
-}
